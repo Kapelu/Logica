@@ -1,12 +1,13 @@
-Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógico, ordenados de muy básico a avanzado.
+Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógico, ordenados de muy básico a avanzado. Usando expresión de función (Function Expression) y ESModules
+
 
 > 🟢 Fundamentos
 
-01. Determinar si un número es par o impar.
+01. Determinar si un número es par o impar, validar número. ✅
 
-02. Contar caracteres de un string. ✅
+02. Contar caracteres de un string. 
 
-03. Recortar un texto a n caracteres. ✅
+03. Recortar un texto a n caracteres. 
 
 04. Separar un string por un carácter dado.
 
@@ -137,4 +138,6 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 * Después refactor
 
 * Crear test usando Jest → https://jestjs.io/
+
+* Crear un .md explicando los 3 tipos de funciones.
 
