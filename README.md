@@ -1,4 +1,4 @@
-Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógico, ordenados de muy básico a avanzado. Usando expresión de función (Function Expression) y ESModules
+Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógico, ordenados de muy básico a avanzado. Usando expresión de función (Function Expression) y no usar ESModules, usar commonJS
 
 
 > 🟢 Fundamentos
@@ -139,5 +139,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 * Crear test usando Jest → https://jestjs.io/
 
-* Crear un .md explicando los 3 tipos de funciones.
+* Crear un .md explicando los 3 tipos de funciones
+
+* la diferencia entre commonJS y ESModule
 
