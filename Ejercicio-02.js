@@ -1,5 +1,5 @@
 /*
-Programa una función que cuente el número de caracteres de una cadena de texto.
+Programa una función que cuente el número de caracteres string.
 Por ejemplo: miFunción("Hola Mundo") devolverá 10
 */
 
