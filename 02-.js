@@ -1,5 +1,7 @@
-// Programa una función que te devuelva el texto recortado según el número de caracteres indicados.
-// Por ejemplo: miFunción("Hola Mundo", 4) devolverá "Hola"
+/*
+Programa una función que te devuelva el texto recortado según el número de caracteres indicados.
+Por ejemplo: miFunción("Hola Mundo", 4) devolverá "Hola"
+*/
 
 const recortarTexto = (texto = "", longitud = 0) =>
     typeof texto === "string" && longitud > 0

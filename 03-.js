@@ -1,5 +1,7 @@
-// Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter.
-// Por ejemplo: miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal']
+/*
+Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter.
+Por ejemplo: miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal']
+*/
 
 const separarTexto = (texto = "", separador = " ") =>
     typeof texto === "string" && separador
