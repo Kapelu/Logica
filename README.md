@@ -1,6 +1,6 @@
 Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógico, ordenados de muy básico a avanzado.
 
-### 🟢 Fundamentos
+> 🟢 Fundamentos
 
 01. Determinar si un número es par o impar.
 
