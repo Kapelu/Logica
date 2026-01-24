@@ -1,0 +1,6 @@
+# File
+*.yaml
+
+
+# Node modules
+node_modules/
