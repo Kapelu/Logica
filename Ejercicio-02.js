@@ -19,3 +19,5 @@ Si no es una cadena de texto, muestra un mensaje de error en la consola.
 texto.length devuelve la cantidad de caracteres de una cadena de texto
 El condicional valida que texto sea string usando typeof
 */
+
+module.exports = { contarCaracteres };
