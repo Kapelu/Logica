@@ -1,6 +1,7 @@
 const { esParOImpar } = require('../Ejercicio-01.js') 
 const { contarCaracteres } = require("../Ejercicio-02.js") 
 const { recortarTexto } = require ( "../Ejercicio-03.js") 
+const { separarTexto } = require ("../Ejercicio-04.js")
 
 describe('*​ - Determinar si un número es par o impar, validar número.', () => {
     test('Validar si es un número', () => {
@@ -58,3 +59,26 @@ describe("* - Función que te devuelva el texto recortado según el número de c
     }) 
 }) 
 
+describe('separarTexto', () => {
+
+    test('función que dada una String te devuelva un Array de textos separados por cierto caracter.', () => {
+        const resultado = separarTexto("hola que tal", " ");
+        expect(resultado).toEqual(["hola", "que", "tal"]);
+    });
+
+    test('separa un texto usando otro separador', () => {
+        const resultado = separarTexto("hola-que-tal", "-");
+        expect(resultado).toEqual(["hola", "que", "tal"]);
+    });
+
+    test('devuelve error si el texto no es string', () => {
+        const resultado = separarTexto(123, " ");
+        expect(resultado).toBe("Error: datos inválidos");
+    });
+
+    test('devuelve error si no hay separador', () => {
+        const resultado = separarTexto("hola que tal", "");
+        expect(resultado).toBe("Error: datos inválidos");
+    });
+
+});

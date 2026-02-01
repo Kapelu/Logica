@@ -20,3 +20,5 @@ El condicional valida:
     * que texto sea string usando typeof
     * que separador no esté vacío (evaluación implícita)
 */
+
+module.exports = { separarTexto };
