@@ -2,6 +2,7 @@ const { esParOImpar } = require('../Ejercicio-01.js')
 const { contarCaracteres } = require("../Ejercicio-02.js") 
 const { recortarTexto } = require ( "../Ejercicio-03.js") 
 const { separarTexto } = require ("../Ejercicio-04.js")
+const { repetirString } = require ("../Ejercicio-05.js")
 
 describe('*​ - Determinar si un número es par o impar, validar número.', () => {
     test('Validar si es un número', () => {
@@ -59,9 +60,9 @@ describe("* - Función que te devuelva el texto recortado según el número de c
     }) 
 }) 
 
-describe('separarTexto', () => {
+describe('* - Función que separa un string en un array de strings según un separador', () => {
 
-    test('función que dada una String te devuelva un Array de textos separados por cierto caracter.', () => {
+    test('separa un texto usando el separador por defecto', () => {
         const resultado = separarTexto("hola que tal", " ");
         expect(resultado).toEqual(["hola", "que", "tal"]);
     });
@@ -79,6 +80,30 @@ describe('separarTexto', () => {
     test('devuelve error si no hay separador', () => {
         const resultado = separarTexto("hola que tal", "");
         expect(resultado).toBe("Error: datos inválidos");
+    });
+
+});
+
+describe('* - funcion que repite un string n veces', () => {
+
+    test('función que repita un string n veces.', () => {
+        const resultado = repetirString("Hola", 3);
+        expect(resultado).toBe("HolaHolaHola");
+    });
+
+    test('devuelve error si el primer argumento no es un string', () => {
+        const resultado = repetirString(123, 3);
+        expect(resultado).toBe("Error: el primer argumento debe ser un string");
+    });
+
+    test('devuelve error si el segundo argumento no es un número', () => {
+        const resultado = repetirString("Hola", "tres");
+        expect(resultado).toBe("Error: el segundo argumento debe ser un número");
+    });
+
+    test('devuelve error si el número de repeticiones es negativo', () => {
+        const resultado = repetirString("Hola", -1);
+        expect(resultado).toBe("Error: el número de repeticiones no puede ser negativo");
     });
 
 });
