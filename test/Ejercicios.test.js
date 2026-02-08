@@ -3,6 +3,7 @@ const { contarCaracteres } = require("../Ejercicio-02.js")
 const { recortarTexto } = require ( "../Ejercicio-03.js") 
 const { separarTexto } = require ("../Ejercicio-04.js")
 const { repetirString } = require ("../Ejercicio-05.js")
+const { invertirString } = require ("../Ejercicio-06.js")
 
 describe('*​ - Determinar si un número es par o impar, validar número.', () => {
     test('Validar si es un número', () => {
@@ -86,24 +87,36 @@ describe('* - Función que separa un string en un array de strings según un sep
 
 describe('* - funcion que repite un string n veces', () => {
 
-    test('función que repita un string n veces.', () => {
-        const resultado = repetirString("Hola", 3);
-        expect(resultado).toBe("HolaHolaHola");
-    });
-
     test('devuelve error si el primer argumento no es un string', () => {
         const resultado = repetirString(123, 3);
         expect(resultado).toBe("Error: el primer argumento debe ser un string");
     });
-
+    
     test('devuelve error si el segundo argumento no es un número', () => {
         const resultado = repetirString("Hola", "tres");
         expect(resultado).toBe("Error: el segundo argumento debe ser un número");
     });
-
+    
     test('devuelve error si el número de repeticiones es negativo', () => {
         const resultado = repetirString("Hola", -1);
         expect(resultado).toBe("Error: el número de repeticiones no puede ser negativo");
     });
+    
+    test('función que repita un string n veces.', () => {
+        const resultado = repetirString("Hola", 3);
+        expect(resultado).toBe("HolaHolaHola");
+    });
+});
 
+describe('* - funcion que invierte un string', () => {
+
+    test('devuelve error si el argumento no es un string', () => {
+        const resultado = invertirString(12345);
+        expect(resultado).toBe("Error: el primer argumento debe ser un string");
+    });
+    
+    test('función que invierte un string.', () => {
+        const resultado = invertirString("Hola");
+        expect(resultado).toBe("aloH");
+    });
 });
