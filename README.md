@@ -33,7 +33,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 15. Comparar dos números y devolver el mayor.
 
-### 🟡 Lógica intermedia 
+### 🟡 Lógica intermedia
 
 16. Calcular el factorial de un número.
 
@@ -65,7 +65,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 30. Capitalizar la primera letra de cada palabra.
 
-### 🔵 Lógica fuerte
+### 🔵 Lógica avanzada
 
 31. Comparar dos arrays y devolver los elementos comunes.
 
@@ -97,7 +97,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 45. Encontrar la intersección de múltiples arrays.
 
-### 🔴 Avanzado / Mentalidad dev (46–60)
+### 🔴 Lógica funcional / Mentalidad dev (46–60)
 
 46. Implementar búsqueda binaria.
 

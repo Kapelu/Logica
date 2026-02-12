@@ -1,10 +1,10 @@
-const { esParOImpar } = require('../Ejercicio-01.js') 
-const { contarCaracteres } = require("../Ejercicio-02.js") 
-const { recortarTexto } = require ( "../Ejercicio-03.js") 
-const { separarTexto } = require ("../Ejercicio-04.js")
-const { repetirString } = require ("../Ejercicio-05.js")
-const { invertirString } = require("../Ejercicio-06.js")
-const { convertirMayusculasMinusculas } = require("../Ejercicio-07.js");
+const { esParOImpar } = require('./Ejercicio-01.js') 
+const { contarCaracteres } = require("./Ejercicio-02.js") 
+const { recortarTexto } = require ( "./Ejercicio-03.js") 
+const { separarTexto } = require ("./Ejercicio-04.js")
+const { repetirString } = require ("./Ejercicio-05.js")
+const { invertirString } = require("./Ejercicio-06.js")
+const { convertirMayusculasMinusculas } = require("../Ejercicio-07.js")
 
 describe('*​ - Determinar si un número es par o impar, validar número.', () => {
     test('Validar si es un número', () => {
