@@ -1,7 +1,7 @@
 Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógico, ordenados de muy básico a avanzado. Usando expresión de función (Function Expression) y no usar ESModules, usar commonJS
 
 
-> 🟢 Fundamentos
+### 🟢 Fundamentos
 
 ✅ 01. Determinar si un número es par o impar, validar número. 
 
