@@ -3,19 +3,19 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 > 🟢 Fundamentos
 
-01. Determinar si un número es par o impar, validar número. ✅
+✅ 01. Determinar si un número es par o impar, validar número. 
 
-02. Contar caracteres de un string. 
+✅ 02. Contar caracteres de un string. 
 
-03. Recortar un texto a n caracteres. 
+✅ 03. Recortar un texto a n caracteres. 
 
-04. Separar un string por un carácter dado.
+✅ 04. Separar un string por un carácter dado.
 
-05. Repetir un string n veces.
+✅ 05. Repetir un string n veces.
 
-06. Invertir un string.
+✅ 06. Invertir un string.
 
-07. Convertir texto a mayúsculas y minúsculas.
+✅ 07. Convertir texto a mayúsculas y minúsculas.
 
 08. Sumar dos números sin usar +.
 
