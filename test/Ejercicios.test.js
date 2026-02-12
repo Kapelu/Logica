@@ -3,7 +3,8 @@ const { contarCaracteres } = require("../Ejercicio-02.js")
 const { recortarTexto } = require ( "../Ejercicio-03.js") 
 const { separarTexto } = require ("../Ejercicio-04.js")
 const { repetirString } = require ("../Ejercicio-05.js")
-const { invertirString } = require ("../Ejercicio-06.js")
+const { invertirString } = require("../Ejercicio-06.js")
+const { convertirMayusculasMinusculas } = require("../Ejercicio-07.js");
 
 describe('*​ - Determinar si un número es par o impar, validar número.', () => {
     test('Validar si es un número', () => {
@@ -118,5 +119,17 @@ describe('* - funcion que invierte un string', () => {
     test('función que invierte un string.', () => {
         const resultado = invertirString("Hola");
         expect(resultado).toBe("aloH");
+    });
+});
+
+describe("* - funcion que convierte texto a mayúsculas y minúsculas", () => {
+    test("devuelve error si el argumento no es un string", () => {
+    expect(() => convertirMayusculasMinusculas(12345)).toThrow('El valor "12345" ingresado, No es una cadena de texto',
+    );
+    });
+
+    test("función que convierte texto a mayúsculas y minúsculas.", () => {
+    const resultado = convertirMayusculasMinusculas("Hola Mundo");
+    expect(resultado).toBeUndefined();
     });
 });
