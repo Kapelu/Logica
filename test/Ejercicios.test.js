@@ -5,6 +5,7 @@ const { separarTexto } = require ("../01-Fundamentos/Ejercicio-04.js")
 const { repetirString } = require ("../01-Fundamentos/Ejercicio-05.js")
 const { invertirString } = require("../01-Fundamentos/Ejercicio-06.js")
 const { convertirMayusculasMinusculas } = require("../01-Fundamentos/Ejercicio-07.js")
+const { sumarSinMas } = require("../01-Fundamentos/Ejercicio-08.js")
 
 describe('*​ - Determinar si un número es par o impar, validar número.', () => {
     test('Validar si es un número', () => {
@@ -131,5 +132,12 @@ describe("* - funcion que convierte texto a mayúsculas y minúsculas", () => {
     test("función que convierte texto a mayúsculas y minúsculas.", () => {
     const resultado = convertirMayusculasMinusculas("Hola Mundo");
     expect(resultado).toBeUndefined();
+    });
+});
+
+describe("* - funcion que suma dos números sin usar +", () => {
+    test("función que suma dos números sin usar +.", () => {
+    const resultado = sumarSinMas(5, 5);
+    expect(resultado).toBe(10);
     });
 });

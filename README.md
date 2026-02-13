@@ -17,7 +17,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ✅ 07. Convertir texto a mayúsculas y minúsculas.
 
-08. Sumar dos números sin usar +.
+✅ 08. Sumar dos números sin usar +.
 
 09. Generar un número aleatorio entre dos valores.
 
