@@ -19,7 +19,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ✅ 08. Sumar dos números sin usar +.
 
-09. Generar un número aleatorio entre dos valores.
+✅ 09. Generar un número aleatorio entre dos valores.
 
 10. Retornar el tipo de dato recibido.
 

@@ -6,6 +6,7 @@ const { repetirString } = require ("../01-Fundamentos/Ejercicio-05.js")
 const { invertirString } = require("../01-Fundamentos/Ejercicio-06.js")
 const { convertirMayusculasMinusculas } = require("../01-Fundamentos/Ejercicio-07.js")
 const { sumarSinMas } = require("../01-Fundamentos/Ejercicio-08.js")
+const { numeroAleatorio } = require("../01-Fundamentos/Ejercicio-09.js")
 
 describe('*​ - Determinar si un número es par o impar, validar número.', () => {
     test('Validar si es un número', () => {
@@ -139,5 +140,23 @@ describe("* - funcion que suma dos números sin usar +", () => {
     test("función que suma dos números sin usar +.", () => {
     const resultado = sumarSinMas(5, 5);
     expect(resultado).toBe(10);
+    });
+});
+
+describe("* - funcion que genera un número aleatorio entre dos valores", () => {
+    test("devuelve error si alguno de los argumentos no es un número", () => {
+    const resultado = numeroAleatorio("a", 10);
+    expect(resultado).toBe("Error: ambos valores deben ser números");
+    });
+
+    test("devuelve error si el valor mínimo es mayor que el máximo", () => {
+    const resultado = numeroAleatorio(10, 5);
+    expect(resultado).toBe("Error: el valor mínimo no puede ser mayor que el máximo");
+    });
+
+    test("genera un número aleatorio entre dos valores.", () => {
+    const resultado = numeroAleatorio(1, 100);
+    expect(resultado).toBeGreaterThanOrEqual(1);
+    expect(resultado).toBeLessThanOrEqual(100);
     });
 });
