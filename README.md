@@ -21,7 +21,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ✅ 09. Generar un número aleatorio entre dos valores.
 
-10. Retornar el tipo de dato recibido.
+✅ 10. Retornar el tipo de dato recibido.
 
 11. Verificar si un número es positivo, negativo o cero.
 

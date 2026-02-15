@@ -7,6 +7,7 @@ const { invertirString } = require("../01-Fundamentos/Ejercicio-06.js")
 const { convertirMayusculasMinusculas } = require("../01-Fundamentos/Ejercicio-07.js")
 const { sumarSinMas } = require("../01-Fundamentos/Ejercicio-08.js")
 const { numeroAleatorio } = require("../01-Fundamentos/Ejercicio-09.js")
+const { tipoDato } = require("../01-Fundamentos/Ejercicio-10.js")
 
 describe('*​ - Determinar si un número es par o impar, validar número.', () => {
     test('Validar si es un número', () => {
@@ -158,5 +159,17 @@ describe("* - funcion que genera un número aleatorio entre dos valores", () => 
     const resultado = numeroAleatorio(1, 100);
     expect(resultado).toBeGreaterThanOrEqual(1);
     expect(resultado).toBeLessThanOrEqual(100);
+    });
+});
+
+describe("* - funcion que retorna el tipo de dato recibido", () => {
+    test("retorna el tipo de dato recibido.", () => {
+    expect(tipoDato(5)).toBe("number");
+    expect(tipoDato("Hola")).toBe("string");
+    expect(tipoDato(true)).toBe("boolean");
+    expect(tipoDato(null)).toBe("object");
+    expect(tipoDato(undefined)).toBe("undefined");
+    expect(tipoDato({})).toBe("object");
+    expect(tipoDato([])).toBe("object");
     });
 });
