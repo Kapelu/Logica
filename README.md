@@ -23,7 +23,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ✅ 10. Retornar el tipo de dato recibido.
 
-11. Verificar si un número es positivo, negativo o cero.
+✅ 11. Verificar si un número es positivo, negativo o cero.
 
 12. Contar vocales en un string.
 
