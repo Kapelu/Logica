@@ -25,7 +25,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ✅ 11. Verificar si un número es positivo, negativo o cero.
 
-12. Contar vocales en un string.
+✅ 12. Contar vocales en un string.
 
 13. Contar consonantes en un string.
 

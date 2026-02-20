@@ -9,6 +9,7 @@ const { sumarSinMas } = require("../01-Fundamentos/Ejercicio-08.js")
 const { numeroAleatorio } = require("../01-Fundamentos/Ejercicio-09.js")
 const { tipoDato } = require("../01-Fundamentos/Ejercicio-10.js")
 const { verificarNumero } = require("../01-Fundamentos/Ejercicio-11.js")
+const { contarVocales } = require("../01-Fundamentos/Ejercicio-12.js")  
 
 
     describe('*​ - Determinar si un número es par o impar, validar número.', () => {
@@ -189,3 +190,10 @@ const { verificarNumero } = require("../01-Fundamentos/Ejercicio-11.js")
             expect(verificarNumero(0)).toBe("cero");
         });
     })
+
+    describe("* - funcion que cuenta las vocales en un string", () => {
+        test("cuenta las vocales en un string.", () => {
+            const resultado = contarVocales("Hola Mundo");
+            expect(resultado).toBe(4);
+        });
+    });
