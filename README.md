@@ -29,7 +29,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ✅ 13. Contar consonantes en un string.
 
-14. Validar si una palabra es palíndromo.
+✅ 14. Validar si una palabra o fresa es palíndromo.
 
 15. Comparar dos números y devolver el mayor.
 

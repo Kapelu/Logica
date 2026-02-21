@@ -11,6 +11,7 @@ const { tipoDato } = require("../01-Fundamentos/Ejercicio-10.js")
 const { verificarNumero } = require("../01-Fundamentos/Ejercicio-11.js")
 const { contarVocales } = require("../01-Fundamentos/Ejercicio-12.js") 
 const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
+const { esPalindromo } = require("../01-Fundamentos/Ejercicio-14.js")
 
 
     describe('01​-Determinar si un número es par o impar, validar número.', () => {
@@ -205,3 +206,10 @@ const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
             expect(resultado).toBe(5) 
         }) 
     }) 
+
+    describe("14-funcion que valida si una palabra o frase dada, es un palíndromo", () => {
+        test("valida si una palabra o frase dada, es un palíndromo.", () => {
+            const resultado = esPalindromo("Anita lava la tina"); 
+            expect(resultado).toBe(true) 
+        }) 
+    })
