@@ -13,7 +13,7 @@ const { contarVocales } = require("../01-Fundamentos/Ejercicio-12.js")
 const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
 
 
-    describe('01​ - Determinar si un número es par o impar, validar número.', () => {
+    describe('01​-Determinar si un número es par o impar, validar número.', () => {
         test('Validar si es un número', () => {
             expect(esParOImpar("hola")).toBe("Error: debe ser un número")
         })
@@ -25,7 +25,7 @@ const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
         })
     })
 
-    describe("02 - Función que cuenta el números de caracteres", () => {
+    describe("02-Función que cuenta el números de caracteres", () => {
 
         test("Devuelve error si no recibe un string", () => {
             expect(contarCaracteres(123)).toBe("Error: el valor debe ser una cadena de texto")
@@ -43,7 +43,7 @@ const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
     })
 
 
-    describe("03 - Función que te devuelva el texto recortado según el número de caracteres indicados.", () => {
+    describe("03-Función que te devuelva el texto recortado según el número de caracteres indicados.", () => {
         test("Recorta el texto según la longitud indicada", () => {
             expect(recortarTexto("Hola Mundo", 4)).toBe("Hola")
         })
@@ -61,7 +61,7 @@ const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
         })
 
         test("Devuelve error si la longitud es negativa", () => {
-            expect(recortarTexto("Hola", -1)).toBe("Error: datos inválidos")
+            expect(recortarTexto("Hola",-1)).toBe("Error: datos inválidos")
         })
 
         test("Devuelve error si la longitud no es un entero", () => {
@@ -69,7 +69,7 @@ const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
         })
     })
 
-    describe('04 - Función que separa un string en un array de strings según un separador', () => {
+    describe('04-Función que separa un string en un array de strings según un separador', () => {
 
         test('separa un texto usando el separador por defecto', () => {
             const resultado = separarTexto("hola que tal", " ") 
@@ -93,7 +93,7 @@ const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
 
     }) 
 
-    describe('05 - funcion que repite un string n veces', () => {
+    describe('05-funcion que repite un string n veces', () => {
 
         test('devuelve error si el primer argumento no es un string', () => {
             const resultado = repetirString(123, 3) 
@@ -106,7 +106,7 @@ const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
         }) 
     
         test('devuelve error si el número de repeticiones es negativo', () => {
-            const resultado = repetirString("Hola", -1) 
+            const resultado = repetirString("Hola",-1) 
             expect(resultado).toBe("Error: el número de repeticiones no puede ser negativo") 
         }) 
     
@@ -116,7 +116,7 @@ const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
         }) 
     }) 
 
-    describe('06 - funcion que invierte un string', () => {
+    describe('06-funcion que invierte un string', () => {
 
         test('devuelve error si el argumento no es un string', () => {
             const resultado = invertirString(12345) 
@@ -129,26 +129,26 @@ const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
         }) 
     }) 
 
-    describe("07 - funcion que convierte texto a mayúsculas y minúsculas", () => {
+    describe("07-funcion que convierte texto a mayúsculas y minúsculas", () => {
         test("devuelve error si el argumento no es un string", () => {
-            expect(() => convertirMayusculasMinusculas(12345)).toThrow('El valor "12345" ingresado, No es una cadena de texto',
-            ) 
-        }) 
+        expect(() => convertirMayusculasMinusculas(123)).toThrow('El valor "123" ingresado, No es una cadena de texto',
+        );
+    });
 
         test("función que convierte texto a mayúsculas y minúsculas.", () => {
-            const resultado = convertirMayusculasMinusculas("Hola Mundo") 
-            expect(resultado).toBeUndefined() 
-        }) 
-    }) 
-
-    describe("08 - funcion que suma dos números sin usar +", () => {
+        const resultado = convertirMayusculasMinusculas("Hola Mundo");
+        expect(resultado).toBe("Texto original: Hola Mundo\nTexto mayúsculas: HOLA MUNDO\nTexto minúsculas: hola mundo",
+        );
+    });
+    });
+    describe("08-funcion que suma dos números sin usar +", () => {
         test("función que suma dos números sin usar +.", () => {
             const resultado = sumarSinMas(5, 5) 
             expect(resultado).toBe(10) 
         }) 
     }) 
 
-    describe("09 - funcion que genera un número aleatorio entre dos valores", () => {
+    describe("09-funcion que genera un número aleatorio entre dos valores", () => {
         test("devuelve error si alguno de los argumentos no es un número", () => {
             const resultado = numeroAleatorio("a", 10) 
             expect(resultado).toBe("Error: ambos valores deben ser números") 
@@ -166,7 +166,7 @@ const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
         }) 
     }) 
 
-    describe("10 - funcion que retorna el tipo de dato recibido", () => {
+    describe("10-funcion que retorna el tipo de dato recibido", () => {
         test("retorna el tipo de dato recibido.", () => {
             expect(tipoDato(5)).toBe("number") 
             expect(tipoDato("Hola")).toBe("string") 
@@ -178,7 +178,7 @@ const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
         }) 
     }) 
 
-    describe("11 - funcion que verifica si un número es positivo, negativo o cero", () => {
+    describe("11-funcion que verifica si un número es positivo, negativo o cero", () => {
         test("devuelve 'positivo' si el número es mayor que cero", () => {
             expect(verificarNumero(5)).toBe("positivo") 
         }) 
@@ -192,14 +192,14 @@ const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
         }) 
     })
 
-    describe("12 - funcion que cuenta las vocales en un string", () => {
+    describe("12-funcion que cuenta las vocales en un string", () => {
         test("cuenta las vocales en un string.", () => {
             const resultado = contarVocales("Hola Mundo") 
             expect(resultado).toBe(4) 
         }) 
     }) 
 
-    describe("13 - funcion que cuenta las consonantes en un string", () => {
+    describe("13-funcion que cuenta las consonantes en un string", () => {
         test("cuenta las consonantes en un string.", () => {
             const resultado = contarConsonantes("Hola Mundo") 
             expect(resultado).toBe(5) 
