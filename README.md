@@ -27,7 +27,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ✅ 12. Contar vocales en un string.
 
-13. Contar consonantes en un string.
+✅ 13. Contar consonantes en un string.
 
 14. Validar si una palabra es palíndromo.
 

@@ -9,7 +9,8 @@ const { sumarSinMas } = require("../01-Fundamentos/Ejercicio-08.js")
 const { numeroAleatorio } = require("../01-Fundamentos/Ejercicio-09.js")
 const { tipoDato } = require("../01-Fundamentos/Ejercicio-10.js")
 const { verificarNumero } = require("../01-Fundamentos/Ejercicio-11.js")
-const { contarVocales } = require("../01-Fundamentos/Ejercicio-12.js")  
+const { contarVocales } = require("../01-Fundamentos/Ejercicio-12.js") 
+const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
 
 
     describe('*​ - Determinar si un número es par o impar, validar número.', () => {
@@ -71,129 +72,136 @@ const { contarVocales } = require("../01-Fundamentos/Ejercicio-12.js")
     describe('* - Función que separa un string en un array de strings según un separador', () => {
 
         test('separa un texto usando el separador por defecto', () => {
-            const resultado = separarTexto("hola que tal", " ");
-            expect(resultado).toEqual(["hola", "que", "tal"]);
-        });
+            const resultado = separarTexto("hola que tal", " ") 
+            expect(resultado).toEqual(["hola", "que", "tal"]) 
+        }) 
 
         test('separa un texto usando otro separador', () => {
-            const resultado = separarTexto("hola-que-tal", "-");
-            expect(resultado).toEqual(["hola", "que", "tal"]);
-        });
+            const resultado = separarTexto("hola-que-tal", "-") 
+            expect(resultado).toEqual(["hola", "que", "tal"]) 
+        }) 
 
         test('devuelve error si el texto no es string', () => {
-            const resultado = separarTexto(123, " ");
-            expect(resultado).toBe("Error: datos inválidos");
-        });
+            const resultado = separarTexto(123, " ") 
+            expect(resultado).toBe("Error: datos inválidos") 
+        }) 
 
         test('devuelve error si no hay separador', () => {
-            const resultado = separarTexto("hola que tal", "");
-            expect(resultado).toBe("Error: datos inválidos");
-        });
+            const resultado = separarTexto("hola que tal", "") 
+            expect(resultado).toBe("Error: datos inválidos") 
+        }) 
 
-    });
+    }) 
 
     describe('* - funcion que repite un string n veces', () => {
 
         test('devuelve error si el primer argumento no es un string', () => {
-            const resultado = repetirString(123, 3);
-            expect(resultado).toBe("Error: el primer argumento debe ser un string");
-        });
+            const resultado = repetirString(123, 3) 
+            expect(resultado).toBe("Error: el primer argumento debe ser un string") 
+        }) 
     
         test('devuelve error si el segundo argumento no es un número', () => {
-            const resultado = repetirString("Hola", "tres");
-            expect(resultado).toBe("Error: el segundo argumento debe ser un número");
-        });
+            const resultado = repetirString("Hola", "tres") 
+            expect(resultado).toBe("Error: el segundo argumento debe ser un número") 
+        }) 
     
         test('devuelve error si el número de repeticiones es negativo', () => {
-            const resultado = repetirString("Hola", -1);
-            expect(resultado).toBe("Error: el número de repeticiones no puede ser negativo");
-        });
+            const resultado = repetirString("Hola", -1) 
+            expect(resultado).toBe("Error: el número de repeticiones no puede ser negativo") 
+        }) 
     
         test('función que repita un string n veces.', () => {
-            const resultado = repetirString("Hola", 3);
-            expect(resultado).toBe("HolaHolaHola");
-        });
-    });
+            const resultado = repetirString("Hola", 3) 
+            expect(resultado).toBe("HolaHolaHola") 
+        }) 
+    }) 
 
     describe('* - funcion que invierte un string', () => {
 
         test('devuelve error si el argumento no es un string', () => {
-            const resultado = invertirString(12345);
-            expect(resultado).toBe("Error: el primer argumento debe ser un string");
-        });
+            const resultado = invertirString(12345) 
+            expect(resultado).toBe("Error: el primer argumento debe ser un string") 
+        }) 
     
         test('función que invierte un string.', () => {
-            const resultado = invertirString("Hola");
-            expect(resultado).toBe("aloH");
-        });
-    });
+            const resultado = invertirString("Hola") 
+            expect(resultado).toBe("aloH") 
+        }) 
+    }) 
 
     describe("* - funcion que convierte texto a mayúsculas y minúsculas", () => {
         test("devuelve error si el argumento no es un string", () => {
             expect(() => convertirMayusculasMinusculas(12345)).toThrow('El valor "12345" ingresado, No es una cadena de texto',
-            );
-        });
+            ) 
+        }) 
 
         test("función que convierte texto a mayúsculas y minúsculas.", () => {
-            const resultado = convertirMayusculasMinusculas("Hola Mundo");
-            expect(resultado).toBeUndefined();
-        });
-    });
+            const resultado = convertirMayusculasMinusculas("Hola Mundo") 
+            expect(resultado).toBeUndefined() 
+        }) 
+    }) 
 
     describe("* - funcion que suma dos números sin usar +", () => {
         test("función que suma dos números sin usar +.", () => {
-            const resultado = sumarSinMas(5, 5);
-            expect(resultado).toBe(10);
-        });
-    });
+            const resultado = sumarSinMas(5, 5) 
+            expect(resultado).toBe(10) 
+        }) 
+    }) 
 
     describe("* - funcion que genera un número aleatorio entre dos valores", () => {
         test("devuelve error si alguno de los argumentos no es un número", () => {
-            const resultado = numeroAleatorio("a", 10);
-            expect(resultado).toBe("Error: ambos valores deben ser números");
-        });
+            const resultado = numeroAleatorio("a", 10) 
+            expect(resultado).toBe("Error: ambos valores deben ser números") 
+        }) 
 
         test("devuelve error si el valor mínimo es mayor que el máximo", () => {
-            const resultado = numeroAleatorio(10, 5);
-            expect(resultado).toBe("Error: el valor mínimo no puede ser mayor que el máximo");
-        });
+            const resultado = numeroAleatorio(10, 5) 
+            expect(resultado).toBe("Error: el valor mínimo no puede ser mayor que el máximo") 
+        }) 
 
         test("genera un número aleatorio entre dos valores.", () => {
-            const resultado = numeroAleatorio(1, 100);
-            expect(resultado).toBeGreaterThanOrEqual(1);
-            expect(resultado).toBeLessThanOrEqual(100);
-        });
-    });
+            const resultado = numeroAleatorio(1, 100) 
+            expect(resultado).toBeGreaterThanOrEqual(1) 
+            expect(resultado).toBeLessThanOrEqual(100) 
+        }) 
+    }) 
 
     describe("* - funcion que retorna el tipo de dato recibido", () => {
         test("retorna el tipo de dato recibido.", () => {
-            expect(tipoDato(5)).toBe("number");
-            expect(tipoDato("Hola")).toBe("string");
-            expect(tipoDato(true)).toBe("boolean");
-            expect(tipoDato(null)).toBe("object");
-            expect(tipoDato(undefined)).toBe("undefined");
-            expect(tipoDato({})).toBe("object");
-            expect(tipoDato([])).toBe("object");
-        });
-    });
+            expect(tipoDato(5)).toBe("number") 
+            expect(tipoDato("Hola")).toBe("string") 
+            expect(tipoDato(true)).toBe("boolean") 
+            expect(tipoDato(null)).toBe("object") 
+            expect(tipoDato(undefined)).toBe("undefined") 
+            expect(tipoDato({})).toBe("object") 
+            expect(tipoDato([])).toBe("object") 
+        }) 
+    }) 
 
     describe("* - funcion que verifica si un número es positivo, negativo o cero", () => {
         test("devuelve 'positivo' si el número es mayor que cero", () => {
-            expect(verificarNumero(5)).toBe("positivo");
-        });
+            expect(verificarNumero(5)).toBe("positivo") 
+        }) 
 
         test("devuelve 'negativo' si el número es menor que cero", () => {
-            expect(verificarNumero(-3)).toBe("negativo");
-        });
+            expect(verificarNumero(-3)).toBe("negativo") 
+        }) 
 
         test("devuelve 'cero' si el número es igual a cero", () => {
-            expect(verificarNumero(0)).toBe("cero");
-        });
+            expect(verificarNumero(0)).toBe("cero") 
+        }) 
     })
 
     describe("* - funcion que cuenta las vocales en un string", () => {
         test("cuenta las vocales en un string.", () => {
-            const resultado = contarVocales("Hola Mundo");
-            expect(resultado).toBe(4);
-        });
-    });
+            const resultado = contarVocales("Hola Mundo") 
+            expect(resultado).toBe(4) 
+        }) 
+    }) 
+
+    describe("* - funcion que cuenta las consonantes en un string", () => {
+        test("cuenta las consonantes en un string.", () => {
+            const resultado = contarConsonantes("Hola Mundo") 
+            expect(resultado).toBe(5) 
+        }) 
+    }) 
