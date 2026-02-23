@@ -12,7 +12,7 @@ const { verificarNumero } = require("../01-Fundamentos/Ejercicio-11.js")
 const { contarVocales } = require("../01-Fundamentos/Ejercicio-12.js") 
 const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
 const { esPalindromo } = require("../01-Fundamentos/Ejercicio-14.js")
-
+const { compararNumeros } = require("../01-Fundamentos/Ejercicio-15.js")
 
     describe('01​-Determinar si un número es par o impar, validar número.', () => {
         test('Validar si es un número', () => {
@@ -212,4 +212,21 @@ const { esPalindromo } = require("../01-Fundamentos/Ejercicio-14.js")
             const resultado = esPalindromo("Anita lava la tina"); 
             expect(resultado).toBe(true) 
         }) 
+    })
+
+    describe("15-funcion que compara dos números y devuelve el mayor", () => {
+        test("devuelve error si alguno de los argumentos no es un número", () => {
+            const resultado = compararNumeros("a", 10) 
+            expect(resultado).toBe("Error: ambos parámetros deben ser números") 
+        })
+    
+        test("devuelve el mayor de dos números", () => {
+            const resultado = compararNumeros(5, 10) 
+            expect(resultado).toBe(10) 
+        })
+        
+        test("devuelve mensaje si ambos números son iguales", () => {
+            const resultado = compararNumeros(5, 5) 
+            expect(resultado).toBe("Ambos números son iguales") 
+        })
     })

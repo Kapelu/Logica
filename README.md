@@ -31,7 +31,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ✅ 14. Validar si una palabra o fresa es palíndromo.
 
-15. Comparar dos números y devolver el mayor.
+✅ 15. Comparar dos números y devolver el mayor.
 
 ### 🟡 Lógica intermedia
 
