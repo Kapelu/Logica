@@ -39,7 +39,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 > ✅ 17. Verificar si un número es primo.
 
-18. Encontrar el número mayor en un array.
+> ✅ 18. Encontrar el número mayor en un array.
 
 19. Encontrar el número menor en un array.
 

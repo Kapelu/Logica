@@ -13,7 +13,9 @@ const { contarVocales } = require("../01-Fundamentos/Ejercicio-12.js")
 const { contarConsonantes } = require("../01-Fundamentos/Ejercicio-13.js")
 const { esPalindromo } = require("../01-Fundamentos/Ejercicio-14.js")
 const { compararNumeros } = require("../01-Fundamentos/Ejercicio-15.js")
-const { factorial } = require("../02-Lógica-Intermedia/Ejercicio-16.js")  
+const { factorial } = require("../02-Lógica-Intermedia/Ejercicio-16.js")
+const { esPrimo } = require("../02-Lógica-Intermedia/Ejercicio-17.js") 
+const { encontrarMayor } = require("../02-Lógica-Intermedia/Ejercicio-18.js") 
 
     describe('01​-Determinar si un número es par o impar, validar número.', () => {
         test('Validar si es un número', () => {
@@ -251,5 +253,39 @@ const { factorial } = require("../02-Lógica-Intermedia/Ejercicio-16.js")
         test("calcula el factorial de un número dado.", () => {
             const resultado = factorial(5) 
             expect(resultado).toBe(120) 
+        })
+    })
+
+    describe("17-funcion que verifica si un número es primo", () => {
+        test("devuelve error si el argumento no es un número", () => {
+            const resultado = esPrimo("a") 
+            expect(resultado).toBe("Error: debe ser un número") 
+        })
+        
+        test("devuelve false si el número es menor que 2", () => {
+            const resultado = esPrimo(1) 
+            expect(resultado).toBe(false) 
+        })
+
+        test("devuelve false si el número no es primo", () => {
+            const resultado = esPrimo(8) 
+            expect(resultado).toBe(false) 
+        })
+
+        test("verifica si un número es primo.", () => {
+            const resultado = esPrimo(7) 
+            expect(resultado).toBe(true) 
+        })
+    })
+
+    describe("18-funcion que encuentra el número mayor en un array", () => {
+        test("devuelve error si el array está vacío", () => {
+            const resultado = encontrarMayor([]) 
+            expect(resultado).toBe("El array está vacío.") 
+        })
+
+        test("encuentra el número mayor en un array.", () => {
+            const resultado = encontrarMayor([3, 5, 7, 2]) 
+            expect(resultado).toBe(7) 
         })
     })
