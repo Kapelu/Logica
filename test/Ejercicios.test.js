@@ -19,6 +19,8 @@ const { encontrarMayor } = require("../02-Logica-Intermedia/Ejercicio-18.js")
 const { menorEnArray } = require("../02-Logica-Intermedia/Ejercicio-19.js")
 const { sumarArray } = require("../02-Logica-Intermedia/Ejercicio-20.js")
 const { promediarArray } = require("../02-Logica-Intermedia/Ejercicio-21.js")
+const { eliminarDuplicados } = require("../02-Logica-Intermedia/Ejercicio-22.js")   
+
 
     describe('01​-Determinar si un número es par o impar, validar número.', () => {
         test('Validar si es un número', () => {
@@ -373,3 +375,20 @@ const { promediarArray } = require("../02-Logica-Intermedia/Ejercicio-21.js")
             expect(resultado).toBe(2.5) 
         })
     })
+
+    describe("22-funcion que elimina los valores duplicados de un array", () => {
+        test("devuelve error si no se ingresa un arreglo", () => {
+            const resultado = eliminarDuplicados() 
+            expect(resultado).toBe("No ingresaste un arreglo de números") 
+        })  
+        
+        test("devuelve error si el valor ingresado no es un arreglo", () => {
+            const resultado = eliminarDuplicados("no es un arreglo") 
+            expect(resultado).toBe("El valor que ingresaste no es un arreglo") 
+        })
+
+        test("elimina los valores duplicados de un array.", () => {
+            const resultado = eliminarDuplicados([1, 2, 3, 2, 4]) 
+            expect(resultado).toEqual([1, 2, 3, 4]) 
+        })
+    })  

@@ -47,7 +47,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 > ✅ 21. Promediar valores de un array.
 
-22. Eliminar duplicados de un array.
+> ✅ 22. Eliminar duplicados de un array.
 
 23. Contar cuántas veces se repite un valor en un array.
 
