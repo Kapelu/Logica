@@ -49,9 +49,9 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 > ✅ 22. Eliminar duplicados de un array.
 
-23. Contar cuántas veces se repite un valor en un array.
+> ✅ 23. Contar cuántas veces se repite un valor en un array.
 
-24. Ordenar un array sin usar sort().
+> ✅ 24. Ordenar un array sin usar sort().
 
 25. Invertir un array sin usar reverse().
 
