@@ -53,7 +53,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 > ✅ 24. Ordenar un array sin usar sort().
 
-25. Invertir un array sin usar reverse().
+> ✅ 25. Invertir un array sin usar reverse().
 
 26. Convertir Celsius ↔ Fahrenheit.
 

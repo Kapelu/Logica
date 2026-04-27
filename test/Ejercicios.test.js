@@ -22,7 +22,8 @@ const {
     promediarArray,
     eliminarDuplicados,
     contarElementos,
-    ordenarArray
+    ordenarArray,
+    invertirArray
 } = require("../utils/index.js");   
 
     describe('01​-Determinar si un número es par o impar, validar número.', () => {
@@ -419,3 +420,10 @@ const {
             expect(resultado).toEqual([2,3,4,5,7,9]) 
         })
     }) 
+
+    describe("25-funcion que invierte un array sin usar reverse()", () => {
+        test("invierte un array sin usar reverse().", () => {
+            const resultado = invertirArray([1,2,3]) 
+            expect(resultado).toEqual([3,2,1]) 
+        })
+    })
