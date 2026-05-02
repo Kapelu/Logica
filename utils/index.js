@@ -25,6 +25,8 @@ const { eliminarDuplicados } = require("../02-Logica-Intermedia/Ejercicio-22.js"
 const { contarElementos } = require("../02-Logica-Intermedia/Ejercicio-23.js");
 const { ordenarArray } = require("../02-Logica-Intermedia/Ejercicio-24.js");
 const { invertirArray } = require("../02-Logica-Intermedia/Ejercicio-25.js");
+const { convertirFahrenheitACelsius } = require('../02-Logica-Intermedia/Ejercicio-26.js')
+const { Fibonacci } = require('../02-Logica-Intermedia/Ejercicio-27.js')
 
 module.exports = {
   esParOImpar,
@@ -51,5 +53,7 @@ module.exports = {
   eliminarDuplicados,
   contarElementos,
   ordenarArray,
-  invertirArray
+  invertirArray,
+  convertirFahrenheitACelsius,
+  Fibonacci
 };

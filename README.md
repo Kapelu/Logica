@@ -55,9 +55,9 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 > ✅ 25. Invertir un array sin usar reverse().
 
-26. Convertir Celsius ↔ Fahrenheit.
+> ✅ 26. Convertir Fahrenheit ↔ Celsius.
 
-27. Generar la serie Fibonacci hasta n.
+> ✅ 27. Generar la serie Fibonacci hasta n.
 
 28. Aplanar un array anidado.
 

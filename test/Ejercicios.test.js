@@ -23,7 +23,9 @@ const {
     eliminarDuplicados,
     contarElementos,
     ordenarArray,
-    invertirArray
+    invertirArray,
+    convertirFahrenheitACelsius,
+    Fibonacci
 } = require("../utils/index.js");   
 
     describe('01​-Determinar si un número es par o impar, validar número.', () => {
@@ -425,5 +427,19 @@ const {
         test("invierte un array sin usar reverse().", () => {
             const resultado = invertirArray([1,2,3]) 
             expect(resultado).toEqual([3,2,1]) 
+        })
+    })
+
+    describe("26-funcion que convierte farenheit a celcius", () => {
+        test("convierte farenheit a celcius.", () => {
+            const resultado = convertirFahrenheitACelsius(100) 
+            expect(resultado).toBeCloseTo(37.77777777777778) 
+        })
+    })
+
+    describe("27-funcion que genera la serie de Fibonacci hasta un número dado", () => {
+        test("genera la serie de Fibonacci hasta un número dado.", () => {
+            const resultado = Fibonacci(10) 
+            expect(resultado).toEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34]) 
         })
     })
