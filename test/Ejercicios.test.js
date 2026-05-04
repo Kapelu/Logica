@@ -26,7 +26,9 @@ const {
     invertirArray,
     convertirFahrenheitACelsius,
     Fibonacci,
-    aplanarArray
+    aplanarArray,
+    validarEmail,
+    capitalizarPalabras
 } = require("../utils/index.js");   
 
     describe('01​-Determinar si un número es par o impar, validar número.', () => {
@@ -449,5 +451,19 @@ const {
         test("aplana un array de arrays en un solo array.", () => {
             const resultado = aplanarArray([[1, 2], [3, 4], [5, 6]]) 
             expect(resultado).toEqual([1, 2, 3, 4, 5, 6]) 
+        })
+    })
+
+    describe("29-funcion que valida si un e-mail es correcto con regex", () => {
+        test("valida si un e-mail es correcto con regex.", () => {
+            const resultado = validarEmail("usuario@dominio.com")
+            expect(resultado).toBe(true)
+        })
+    })
+
+    describe("30-funcion que capitaliza la primera letra de cada palabra en un string", () => {
+        test("capitaliza la primera letra de cada palabra en un string.", () => {
+            const resultado = capitalizarPalabras("hola mundo")
+            expect(resultado).toBe("Hola Mundo")
         })
     })

@@ -63,7 +63,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 > ✅ 29. Validar si un email es correcto (regex).
 
-30. Capitalizar la primera letra de cada palabra.
+> ✅ 30. Capitalizar la primera letra de cada palabra.
 
 ### 🔵 Lógica avanzada
 
