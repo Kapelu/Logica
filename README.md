@@ -3,73 +3,73 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ### 🟢 Fundamentos
 
-> ✅ 01. Determinar si un número es par o impar, validar número. 
+✅ 01. Determinar si un número es par o impar, validar número. 
 
-> ✅ 02. Contar caracteres de un string. 
+✅ 02. Contar caracteres de un string. 
 
-> ✅ 03. Recortar un texto a n caracteres. 
+✅ 03. Recortar un texto a n caracteres. 
 
-> ✅ 04. Separar un string por un carácter dado.
+✅ 04. Separar un string por un carácter dado.
 
-> ✅ 05. Repetir un string n veces.
+✅ 05. Repetir un string n veces.
 
-> ✅ 06. Invertir un string.
+✅ 06. Invertir un string.
 
-> ✅ 07. Convertir texto a mayúsculas y minúsculas.
+✅ 07. Convertir texto a mayúsculas y minúsculas.
 
-> ✅ 08. Sumar dos números sin usar +.
+✅ 08. Sumar dos números sin usar +.
 
-> ✅ 09. Generar un número aleatorio entre dos valores.
+✅ 09. Generar un número aleatorio entre dos valores.
 
-> ✅ 10. Retornar el tipo de dato recibido.
+✅ 10. Retornar el tipo de dato recibido.
 
-> ✅ 11. Verificar si un número es positivo, negativo o cero.
+✅ 11. Verificar si un número es positivo, negativo o cero.
 
-> ✅ 12. Contar vocales en un string.
+✅ 12. Contar vocales en un string.
 
-> ✅ 13. Contar consonantes en un string.
+✅ 13. Contar consonantes en un string.
 
-> ✅ 14. Validar si una palabra o fresa es palíndromo.
+✅ 14. Validar si una palabra o fresa es palíndromo.
 
-> ✅ 15. Comparar dos números y devolver el mayor.
+✅ 15. Comparar dos números y devolver el mayor.
 
 ### 🟡 Lógica intermedia
 
-> ✅ 16. Calcular el factorial de un número.
+✅ 16. Calcular el factorial de un número.
 
-> ✅ 17. Verificar si un número es primo.
+✅ 17. Verificar si un número es primo.
 
-> ✅ 18. Encontrar el número mayor en un array.
+✅ 18. Encontrar el número mayor en un array.
 
-> ✅ 19. Encontrar el número menor en un array.
+✅ 19. Encontrar el número menor en un array.
 
-> ✅ 20. Sumar todos los valores de un array.
+✅ 20. Sumar todos los valores de un array.
 
-> ✅ 21. Promediar valores de un array.
+✅ 21. Promediar valores de un array.
 
-> ✅ 22. Eliminar duplicados de un array.
+✅ 22. Eliminar duplicados de un array.
 
-> ✅ 23. Contar cuántas veces se repite un valor en un array.
+✅ 23. Contar cuántas veces se repite un valor en un array.
 
-> ✅ 24. Ordenar un array sin usar sort().
+✅ 24. Ordenar un array sin usar sort().
 
-> ✅ 25. Invertir un array sin usar reverse().
+✅ 25. Invertir un array sin usar reverse().
 
-> ✅ 26. Convertir Fahrenheit ↔ Celsius.
+✅ 26. Convertir Fahrenheit ↔ Celsius.
 
-> ✅ 27. Generar la serie Fibonacci hasta n.
+✅ 27. Generar la serie Fibonacci hasta n.
 
-> ✅ 28. Aplanar un array anidado.
+✅ 28. Aplanar un array anidado.
 
-> ✅ 29. Validar si un email es correcto (regex).
+✅ 29. Validar si un email es correcto (regex).
 
-> ✅ 30. Capitalizar la primera letra de cada palabra.
+✅ 30. Capitalizar la primera letra de cada palabra.
 
 ### 🔵 Lógica avanzada
 
-31. Comparar dos arrays y devolver los elementos comunes.
+✅ 31. Comparar dos arrays y devolver los elementos comunes.
 
-32. Comparar dos arrays y devolver los diferentes.
+✅ 32. Comparar dos arrays y devolver los elementos diferentes.
 
 33. Simular el método map().
 

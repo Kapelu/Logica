@@ -28,7 +28,9 @@ const {
     Fibonacci,
     aplanarArray,
     validarEmail,
-    capitalizarPalabras
+    capitalizarPalabras,   
+    elementosEnComun,  
+    elementosDiferentes
 } = require("../utils/index.js");   
 
     describe('01​-Determinar si un número es par o impar, validar número.', () => {
@@ -465,5 +467,19 @@ const {
         test("capitaliza la primera letra de cada palabra en un string.", () => {
             const resultado = capitalizarPalabras("hola mundo")
             expect(resultado).toBe("Hola Mundo")
+        })
+    })
+
+    describe("31-funcion que compara 2 arrays y devuelve los elementos en común", () => {
+        test("compara 2 arrays y devuelve los elementos en común.", () => {
+            const resultado = elementosEnComun([1, 2, 3], [1, 4]) 
+            expect(resultado).toEqual([1]) 
+        })
+    })
+
+    describe("32-funcion que compara 2 arrays y devuelve los elementos diferentes entre sí", () => {
+        test("compara 2 arrays y devuelve los elementos diferentes entre sí.", () => {
+            const resultado = elementosDiferentes([1, 2, 3], [1, 4]) 
+            expect(resultado).toEqual([2, 3, 4]) 
         })
     })

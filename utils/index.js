@@ -29,7 +29,9 @@ const { convertirFahrenheitACelsius } = require('../02-Logica-Intermedia/Ejercic
 const { Fibonacci } = require('../02-Logica-Intermedia/Ejercicio-27.js')
 const { aplanarArray } = require('../02-Logica-Intermedia/Ejercicio-28.js') 
 const { validarEmail } = require('../02-Logica-Intermedia/Ejercicio-29.js')
-const {  capitalizarPalabras } = require('../02-Logica-Intermedia/Ejercicio-30.js')
+const { capitalizarPalabras } = require('../02-Logica-Intermedia/Ejercicio-30.js')
+const { elementosEnComun } = require('../03-Logica-Avanzada/Ejercicio-31.js')
+const { elementosDiferentes } = require('../03-Logica-Avanzada/Ejercicio-32.js')  
 
 module.exports = {
   esParOImpar,
@@ -61,5 +63,7 @@ module.exports = {
   Fibonacci,
   aplanarArray,
   validarEmail,
-  capitalizarPalabras
+  capitalizarPalabras,
+  elementosEnComun,
+  elementosDiferentes
 };
