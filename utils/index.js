@@ -32,6 +32,7 @@ const { validarEmail } = require('../02-Logica-Intermedia/Ejercicio-29.js')
 const { capitalizarPalabras } = require('../02-Logica-Intermedia/Ejercicio-30.js')
 const { elementosEnComun } = require('../03-Logica-Avanzada/Ejercicio-31.js')
 const { elementosDiferentes } = require('../03-Logica-Avanzada/Ejercicio-32.js')  
+const { metodoMap } = require('../03-Logica-Avanzada/Ejercicio-33.js')
 
 module.exports = {
   esParOImpar,
@@ -65,5 +66,6 @@ module.exports = {
   validarEmail,
   capitalizarPalabras,
   elementosEnComun,
-  elementosDiferentes
+  elementosDiferentes,
+  metodoMap
 };

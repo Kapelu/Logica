@@ -30,7 +30,8 @@ const {
     validarEmail,
     capitalizarPalabras,   
     elementosEnComun,  
-    elementosDiferentes
+    elementosDiferentes,
+    metodoMap
 } = require("../utils/index.js");   
 
     describe('01​-Determinar si un número es par o impar, validar número.', () => {
@@ -481,5 +482,12 @@ const {
         test("compara 2 arrays y devuelve los elementos diferentes entre sí.", () => {
             const resultado = elementosDiferentes([1, 2, 3], [1, 4]) 
             expect(resultado).toEqual([2, 3, 4]) 
+        })
+    })
+
+    describe("33-funcion que simula el metodo map()", () => {
+        test("simula el metodo map().", () => {
+            const resultado = metodoMap([1, 2, 3], x => x * 2) 
+            expect(resultado).toEqual([2, 4, 6]) 
         })
     })

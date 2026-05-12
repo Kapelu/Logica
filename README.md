@@ -71,7 +71,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ✅ 32. Comparar dos arrays y devolver los elementos diferentes.
 
-33. Simular el método map().
+✅ 33. Simular el método map().
 
 34. Simular el método filter().
 
