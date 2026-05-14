@@ -33,6 +33,7 @@ const { capitalizarPalabras } = require('../02-Logica-Intermedia/Ejercicio-30.js
 const { elementosEnComun } = require('../03-Logica-Avanzada/Ejercicio-31.js')
 const { elementosDiferentes } = require('../03-Logica-Avanzada/Ejercicio-32.js')  
 const { metodoMap } = require('../03-Logica-Avanzada/Ejercicio-33.js')
+const { metodoFilter } = require('../03-Logica-Avanzada/Ejercicio-34.js')
 
 module.exports = {
   esParOImpar,
@@ -67,5 +68,6 @@ module.exports = {
   capitalizarPalabras,
   elementosEnComun,
   elementosDiferentes,
-  metodoMap
+  metodoMap,
+  metodoFilter
 };

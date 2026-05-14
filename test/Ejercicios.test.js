@@ -31,7 +31,8 @@ const {
     capitalizarPalabras,   
     elementosEnComun,  
     elementosDiferentes,
-    metodoMap
+    metodoMap,
+    metodoFilter
 } = require("../utils/index.js");   
 
     describe('01​-Determinar si un número es par o impar, validar número.', () => {
@@ -491,3 +492,10 @@ const {
             expect(resultado).toEqual([2, 4, 6]) 
         })
     })
+
+    describe("34-funcion que simula el metodo filter()", () => {
+        test("simula el metodo filter().", () => {
+            const resultado = metodoFilter([1, 2, 3], x => x % 2 === 0) 
+            expect(resultado).toEqual([2]) 
+        })
+    })  

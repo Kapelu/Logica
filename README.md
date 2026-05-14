@@ -73,7 +73,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ✅ 33. Simular el método map().
 
-34. Simular el método filter().
+✅ 34. Simular el método filter().
 
 35. Simular el método reduce().
 
