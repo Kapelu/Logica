@@ -75,7 +75,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ✅ 34. Simular el método filter().
 
-35. Simular el método reduce().
+✅ 35. Simular el método reduce().
 
 36. Crear un contador con closure.
 

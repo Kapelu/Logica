@@ -34,6 +34,7 @@ const { elementosEnComun } = require('../03-Logica-Avanzada/Ejercicio-31.js')
 const { elementosDiferentes } = require('../03-Logica-Avanzada/Ejercicio-32.js')  
 const { metodoMap } = require('../03-Logica-Avanzada/Ejercicio-33.js')
 const { metodoFilter } = require('../03-Logica-Avanzada/Ejercicio-34.js')
+const { metodoReduce } = require('../03-Logica-Avanzada/Ejercicio-35.js')
 
 module.exports = {
   esParOImpar,
@@ -69,5 +70,6 @@ module.exports = {
   elementosEnComun,
   elementosDiferentes,
   metodoMap,
-  metodoFilter
+  metodoFilter,
+  metodoReduce
 };
