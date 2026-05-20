@@ -77,7 +77,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ✅ 35. Simular el método reduce().
 
-36. Crear un contador con closure.
+✅ 36. Crear un contador con closure.
 
 37. Determinar si dos strings son anagramas.
 

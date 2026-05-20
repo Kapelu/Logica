@@ -34,6 +34,7 @@ const {
   metodoMap,
   metodoFilter,
   metodoReduce,
+  clousure
 } = require('../utils/index.js')
 
 describe('01​-Determinar si un número es par o impar, validar número.', () => {
@@ -518,5 +519,14 @@ describe('35-funcion que simula el metodo reduce()', () => {
   test('simula el metodo reduce() con valor inicial.', () => {
     const resultado = metodoReduce([1, 2, 3, 4], (acc, val) => acc + val, 10)
     expect(resultado).toBe(20)
+  })
+})
+
+describe('36-funcion que crea un contador con clousures', () => {
+  test('crea un contador con clousures.', () => {
+    const contador = clousure()
+    expect(contador()).toBe(1)
+    expect(contador()).toBe(2)
+    expect(contador()).toBe(3)
   })
 })
