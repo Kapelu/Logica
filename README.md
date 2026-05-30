@@ -79,9 +79,9 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ✅ 36. Crear un contador con closure.
 
-37. Determinar si dos strings son anagramas.
+✅ 37. Determinar si dos strings son anagramas.
 
-38. Encontrar el segundo número más grande de un array.
+✅ 38. Encontrar el segundo número más grande de un array.
 
 39. Rotar un array n posiciones.
 

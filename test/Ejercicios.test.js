@@ -34,7 +34,9 @@ const {
   metodoMap,
   metodoFilter,
   metodoReduce,
-  clousure
+  clousure,
+  sonAnagramas,
+  segundoMasGrande
 } = require('../utils/index.js')
 
 describe('01​-Determinar si un número es par o impar, validar número.', () => {
@@ -528,5 +530,19 @@ describe('36-funcion que crea un contador con clousures', () => {
     expect(contador()).toBe(1)
     expect(contador()).toBe(2)
     expect(contador()).toBe(3)
+  })
+})
+
+describe('37-funcion que determina si dos strings son anagramas', () => {
+  test('determina si dos strings son anagramas.', () => {
+    const resultado = sonAnagramas('roma', 'amor')
+    expect(resultado).toBe(true)
+  })
+})
+
+describe('38-funcion que encuentra el segundo numero más grande en un arreglo de números', () => {
+  test('encuentra el segundo numero más grande en un arreglo de números.', () => {
+    const resultado = segundoMasGrande([1, 2, 3, 4])
+    expect(resultado).toBe(3)
   })
 })
