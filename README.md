@@ -83,7 +83,7 @@ Ejercicios de JavaScript pensados exclusivamente para entrenar pensamiento lógi
 
 ✅ 38. Encontrar el segundo número más grande de un array.
 
-39. Rotar un array n posiciones.
+✅ 39. Rotar un array n posiciones.
 
 40. Convertir un número a binario sin usar toString(2).
 

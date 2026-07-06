@@ -38,6 +38,7 @@ const { metodoReduce } = require('../03-Logica-Avanzada/Ejercicio-35.js')
 const { clousure } = require('../03-Logica-Avanzada/Ejercicio-36.js')
 const { sonAnagramas } = require('../03-Logica-Avanzada/Ejercicio-37.js')
 const { segundoMasGrande } = require('../03-Logica-Avanzada/Ejercicio-38.js')
+const { rotar } = require('../03-Logica-Avanzada/Ejercicio-39.js')
 
 module.exports = {
   esParOImpar,
@@ -77,5 +78,6 @@ module.exports = {
   metodoReduce,
   clousure,
   sonAnagramas,
-  segundoMasGrande
+  segundoMasGrande,
+  rotar
 };

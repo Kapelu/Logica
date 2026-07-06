@@ -36,7 +36,8 @@ const {
   metodoReduce,
   clousure,
   sonAnagramas,
-  segundoMasGrande
+  segundoMasGrande,
+  rotar
 } = require('../utils/index.js')
 
 describe('01​-Determinar si un número es par o impar, validar número.', () => {
@@ -546,3 +547,10 @@ describe('38-funcion que encuentra el segundo numero más grande en un arreglo d
     expect(resultado).toBe(3)
   })
 })
+
+describe('39-funcion que permite rotar un array n posiciones a la derecha', () => {
+  test('permite rotar un array n posiciones a la derecha.', () => {
+    const resultado = rotar([1, 2, 3, 4, 5], 2)
+    expect(resultado).toEqual([4, 5, 1, 2, 3])
+  })
+})  
