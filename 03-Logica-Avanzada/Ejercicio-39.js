@@ -20,4 +20,4 @@ Explicación:
 4. Calcula el valor de `n` módulo la longitud del arreglo para manejar casos donde `n` es mayor que la longitud del arreglo.
 5. Utiliza el método `slice` para dividir el arreglo en dos partes: la última `n` posiciones y el resto del arreglo. Luego, combina estas dos partes usando el operador de propagación (`...`) para formar el nuevo arreglo rotado.
 6. Devuelve el nuevo arreglo rotado.
-*/  
+*/

@@ -553,4 +553,4 @@ describe('39-funcion que permite rotar un array n posiciones a la derecha', () =
     const resultado = rotar([1, 2, 3, 4, 5], 2)
     expect(resultado).toEqual([4, 5, 1, 2, 3])
   })
-})  
+})
